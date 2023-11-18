@@ -64,13 +64,11 @@ function CaseStudies({ caseStudies }) {
   return (
     <>
       <SectionIntro
-        title="Harnessing technology for a brighter future"
+        title="27% Umsatzsteigerung durch qualitative Speisekarten."
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          We believe technology is the answer to the world’s greatest
-          challenges. It’s also the cause, so we find ourselves in bit of a
-          catch 22 situation.
+          Amerikanische Forscher konnten mittels realitätsnaher Studien herausfinden, dass das Design der Speisekarte eines Restaurants 27% des Umsatzes zu verantworten hat. Unsere Design-Arbeit sorgt bei Ihnen für eine spürbare Umsatzsteigerung.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -120,13 +118,12 @@ function Services() {
   return (
     <>
       <SectionIntro
-        eyebrow="Services"
-        title="We help you identify, explore and respond to new opportunities."
+        eyebrow="Unsere Dienstleistungen"
+        title="Wir sorgen für begeisterte, hungrige und zufriedene Kunden."
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          As long as those opportunities involve giving us money to re-purpose
-          old projects — we can come up with an endless number of those.
+          
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -141,24 +138,14 @@ function Services() {
             </FadeIn>
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-            <ListItem title="Web development">
-              We specialise in crafting beautiful, high quality marketing pages.
-              The rest of the website will be a shell that uses lorem ipsum
-              everywhere.
+            <ListItem title="Simpelste Änderungen">
+              Wir bieten Ihnen die Möglichkeit simple Aufgaben wie das aufnehmen neuer Gerichte auf Ihrer derzeitigen Karte oder das Anpassen der Preise in Folge der derzeit herrschenden Inflation uns zu überlassen
             </ListItem>
-            <ListItem title="Application development">
-              We have a team of skilled developers who are experts in the latest
-              app frameworks, like Angular 1 and Google Web Toolkit.
+            <ListItem title="Fundamentales Re-Design">
+              Ein von Grund auf neues, modernes und ansprechendes Design für Ihre kulinarische Liste und damit zu Recht unser Bestseller.
             </ListItem>
-            <ListItem title="E-commerce">
-              We are at the forefront of modern e-commerce development. Which
-              mainly means adding your logo to the Shopify store template we’ve
-              used for the past six years.
-            </ListItem>
-            <ListItem title="Custom content management">
-              At Studio we understand the importance of having a robust and
-              customised CMS. That’s why we run all of our client projects out
-              of a single, enormous Joomla instance.
+            <ListItem title="Vollausstattung">
+              Wir kümmern uns von A bis Z um Ihre neue Karte. Ein anregendes Design wird hierbei durch die Erstellung und Lieferung neuer physischer Speisekarten für Sie ergänzt.
             </ListItem>
           </List>
         </div>
@@ -180,12 +167,10 @@ export default async function Home() {
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-            Award-winning development studio based in Denmark.
+            Speisekarten neu gedacht.
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            We are a development studio working at the intersection of design
-            and technology. It’s a really busy intersection though — a lot of
-            our staff have been involved in hit and runs.
+            Design das Appetit auf mehr macht. Wir haben es uns zur Aufgabe gemacht, mittels Neuinterpretation Ihrer Speisekarten, das kulinarische Erlebnis für den Kunden zu veredeln und die besondere Atmosphäre Ihres Restaurants zu vervollständigen. Wir gewährleisten moderne Menüs um Ihre Kreationen angemessen zu repräsentieren.
           </p>
         </FadeIn>
       </Container>

@@ -134,14 +134,14 @@ function ContactDetails() {
 }
 
 export const metadata = {
-  title: 'Contact Us',
+  title: 'Kontaktieren',
   description: 'Let’s work together. We can’t wait to hear from you.',
 }
 
 export default function Contact() {
   return (
     <>
-      <PageIntro eyebrow="Contact us" title="Let’s work together">
+      <PageIntro eyebrow="Kontaktieren" title="Let’s work together">
         <p>We can’t wait to hear from you.</p>
       </PageIntro>
 

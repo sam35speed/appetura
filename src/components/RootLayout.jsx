@@ -71,8 +71,8 @@ function Header({
           />
         </Link>
         <div className="flex items-center gap-x-8">
-          <Button href="/contact" invert={invert}>
-            Contact us
+          <Button href="mailto:sam@appetura.de?subject=Anfrage%20zur%20Gestaltung%20von%20Speisekarten&body=%0D%0A%0D%0A" invert={invert}>
+            Kontakt
           </Button>
           <button
             ref={toggleRef}
