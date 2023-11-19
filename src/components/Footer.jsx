@@ -23,12 +23,12 @@ const navigation = [
     ],
   },
   {
-    title: 'Company',
+    title: 'appetura',
     links: [
-      { title: 'About', href: '/about' },
-      { title: 'Process', href: '/process' },
-      { title: 'Blog', href: '/blog' },
-      { title: 'Contact us', href: '/contact' },
+      { title: 'Über uns', href: '/about' },
+      { title: 'Unser Vorgehen', href: '/process' },
+      { title: 'Kontakt', href: '/contact' },
+      { title: 'Impressum', href: '/blog' },
     ],
   },
   {
@@ -125,7 +125,7 @@ export function Footer() {
             <Logo className="h-8" fillOnHover />
           </Link>
           <p className="text-sm text-neutral-700">
-            © Appetura {new Date().getFullYear()}
+            © appetura {new Date().getFullYear()}
           </p>
         </div>
       </FadeIn>

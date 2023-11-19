@@ -14,7 +14,7 @@ import logoGreenLife from '@/images/clients/green-life/logo-light.svg'
 import logoHomeWork from '@/images/clients/home-work/logo-light.svg'
 import logoMailSmirk from '@/images/clients/mail-smirk/logo-light.svg'
 import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.svg'
-import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
+import logoPhobiaDark from '@/images/clients/phobia/logomark-light.svg'
 import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
 import logoUnseal from '@/images/clients/unseal/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
@@ -37,7 +37,7 @@ function Clients() {
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            We’ve worked with hundreds of amazing people
+            
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
@@ -118,8 +118,8 @@ function Services() {
   return (
     <>
       <SectionIntro
-        eyebrow="Unsere Dienstleistungen"
-        title="Wir sorgen für begeisterte, hungrige und zufriedene Kunden."
+        eyebrow=""
+        title="Unsere Dienstleistungen"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
@@ -181,11 +181,9 @@ export default async function Home() {
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Phobia', logo: logoPhobiaDark }}
+        client={{ name: 'appetura', logo: imageLaptop }}
       >
-        The team at Studio went above and beyond with our onboarding, even
-        finding a way to access the user’s microphone without triggering one of
-        those annoying permission dialogs.
+        Begeisterung, Hunger und Zufriedenheit für den Kunden sind unsere Priorität.
       </Testimonial>
 
       <Services />

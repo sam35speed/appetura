@@ -13,7 +13,7 @@ export function ContactSection() {
               Überlass uns die Arbeit für deine neue Speisekarte
             </h2>
             <div className="mt-6 flex">
-              <Button href="/contact" invert>
+              <Button href="mailto:sam@appetura.de?subject=Anfrage%20zur%20Gestaltung%20von%20Speisekarten&body=%0D%0A%0D%0A" invert>
                 per E-Mail anfragen
               </Button>
             </div>
