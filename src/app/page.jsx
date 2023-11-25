@@ -19,6 +19,7 @@ import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
 import logoUnseal from '@/images/clients/unseal/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { loadCaseStudies } from '@/lib/mdx'
+import imageInder from '@/images/laptoop.jpg'
 
 const clients = [
   ['Phobia', logoPhobiaLight],
@@ -128,7 +129,7 @@ function Services() {
       </SectionIntro>
       <Container className="mt-16">
         <div className="lg:flex lg:items-center lg:justify-end">
-          <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
+          <div className="justify-center lg:w-1/2 lg:justify-end lg:pr-12 md:flex hidden">
             <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
               <StylizedImage
                 src={imageLaptop}
@@ -156,7 +157,7 @@ function Services() {
 
 export const metadata = {
   description:
-    'We are a development studio working at the intersection of design and technology.',
+    'We are a development appetura working at the intersection of design and technology.',
 }
 
 export default async function Home() {
@@ -175,7 +176,14 @@ export default async function Home() {
         </FadeIn>
       </Container>
 
-      <Clients />
+      <Container className="mt-6 sm:mt-12">
+        <Image
+          alt=""
+          className="w-full bg-neutral-100 object-cover h-64 rounded-lg"
+          // style={{ aspectRatio: `${width} / ${height}` }}
+          src={imageInder}
+        />
+      </Container>
 
       <CaseStudies caseStudies={caseStudies} />
 
@@ -183,7 +191,7 @@ export default async function Home() {
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: 'appetura', logo: imageLaptop }}
       >
-        Begeisterung, Hunger und Zufriedenheit für den Kunden sind unsere Priorität.
+        Begeisterung, Appetit und Zufriedenheit für Ihre Kunden sind unsere Priorität.
       </Testimonial>
 
       <Services />

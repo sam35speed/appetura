@@ -42,7 +42,6 @@ function MenuIcon(props) {
 
 function Header({
   panelId,
-  icon: Icon,
   expanded,
   onToggle,
   toggleRef,
@@ -59,11 +58,11 @@ function Header({
           onMouseEnter={() => setLogoHovered(true)}
           onMouseLeave={() => setLogoHovered(false)}
         >
-          <Logomark
+          {/* <Logomark
             className="h-8 sm:hidden"
             invert={invert}
             filled={logoHovered}
-          />
+          /> */}
           <Logo
             className="hidden h-8 sm:block"
             invert={invert}
@@ -74,27 +73,6 @@ function Header({
           <Button href="mailto:sam@appetura.de?subject=Anfrage%20zur%20Gestaltung%20von%20Speisekarten&body=%0D%0A%0D%0A" invert={invert}>
             Kontakt
           </Button>
-          <button
-            ref={toggleRef}
-            type="button"
-            onClick={onToggle}
-            aria-expanded={expanded ? 'true' : 'false'}
-            aria-controls={panelId}
-            className={clsx(
-              'group -m-2.5 rounded-full p-2.5 transition',
-              invert ? 'hover:bg-white/10' : 'hover:bg-neutral-950/10',
-            )}
-            aria-label="Toggle navigation"
-          >
-            <Icon
-              className={clsx(
-                'h-6 w-6',
-                invert
-                  ? 'fill-white group-hover:fill-neutral-200'
-                  : 'fill-neutral-950 group-hover:fill-neutral-700',
-              )}
-            />
-          </button>
         </div>
       </div>
     </Container>
@@ -126,10 +104,7 @@ function NavigationItem({ href, children }) {
 function Navigation() {
   return (
     <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
-      <NavigationRow>
-        <NavigationItem href="/work">Referenzen</NavigationItem>
-        <NavigationItem href="/about">Über uns</NavigationItem>
-      </NavigationRow>
+      
       <NavigationRow>
         <NavigationItem href="/process">Unser Vorgehen</NavigationItem>
         <NavigationItem href="/blog">Kontakt</NavigationItem>
@@ -173,7 +148,6 @@ function RootLayoutInner({ children }) {
         >
           <Header
             panelId={panelId}
-            icon={MenuIcon}
             toggleRef={openRef}
             expanded={expanded}
             onToggle={() => {
@@ -198,7 +172,6 @@ function RootLayoutInner({ children }) {
               <Header
                 invert
                 panelId={panelId}
-                icon={XIcon}
                 toggleRef={closeRef}
                 expanded={expanded}
                 onToggle={() => {

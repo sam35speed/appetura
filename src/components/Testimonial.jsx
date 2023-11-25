@@ -25,8 +25,7 @@ export function Testimonial({ children, client, className }) {
                 {children}
               </p>
             </blockquote>
-            <figcaption className="mt-10">
-            </figcaption>
+           
           </figure>
         </FadeIn>
       </Container>
